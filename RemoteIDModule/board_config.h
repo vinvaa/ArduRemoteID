@@ -164,6 +164,19 @@
 #define CAN_TERM_EN  LOW
 #define CAN_APP_NODE_NAME "net.cuav.c-rid"
 
+// add mine board
+#elif defined(BOARD_DroneID_GEEK)
+#define BOARD_ID 13
+#define PIN_CAN_TX GPIO_NUM_5
+#define PIN_CAN_RX GPIO_NUM_4
+
+#define PIN_UART_TX 3
+#define PIN_UART_RX 2
+
+#define WS2812_LED_PIN GPIO_NUM_8
+
+#define CAN_APP_NODE_NAME "diy.geek.rid"
+
 #else
 #error "unsupported board"
 #endif

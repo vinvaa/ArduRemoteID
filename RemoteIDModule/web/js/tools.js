@@ -82,6 +82,11 @@ function page_fill_json_html(json) {
                     document.getElementById("logo").alt="CUAV";
                     document.getElementById("STATUS:BOARD").innerText = "CUAV RemoteID";
                     document.getElementById("documentation").innerHTML = "<ul><li><a href='https://ardupilot.org/ardupilot/index.html'>ArduPilot Project</a></li><li><a href='https://github.com/ArduPilot/ArduRemoteID'>ArduRemoteID Project</a></li><li><a href='https://ardupilot.org/plane/docs/common-remoteid.html'>ArduPilot RemoteID Documentation</a></li><li><a href='https://www.opendroneid.org/'>OpenDroneID Website</a></li></ul>";
+                } else if (json[v] == "13") {  
+                    document.getElementById("logo").src="images/GEEK.jpg";  
+                    document.getElementById("logo").alt="GEEK-PIC";  
+                    document.getElementById("STATUS:BOARD").innerText = "Geek";  
+                    document.getElementById("documentation").innerHTML = "<ul><li><a href='https://ardupilot.org/ardupilot/index.html'>ArduPilot Project</a></li><li><a href='https://github.com/ArduPilot/ArduRemoteID'>ArduRemoteID Project</a></li><li><a href='https://ardupilot.org/plane/docs/common-remoteid.html'>ArduPilot RemoteID Documentation</a></li><li><a href='https://www.opendroneid.org/'>OpenDroneID Website</a></li></ul>";
                 } else {
                     document.getElementById("logo").src="images/logo.jpg";
                     document.getElementById("logo").alt="ArduPilot";
